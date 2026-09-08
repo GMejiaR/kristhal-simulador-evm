@@ -1,0 +1,8 @@
+ID,Actividad,Predecesoras,d_opt,d_mp,d_pes,c_opt,c_mp,c_pes
+A,"Marca, identidad y catalogo",,7,10,16,12000,15000,22000
+B,Sesion fotografica y edicion,A,5,8,13,6000,8000,12000
+C,Desarrollo del sitio e-commerce,A,15,20,30,28000,35000,50000
+D,Integracion de pasarela de pagos,C,4,6,11,4000,6000,10000
+E,Carga de catalogo y contenido,"B,C",4,7,13,3500,5000,9000
+F,Pruebas y seguridad,"D,E",5,8,14,5000,7000,12000
+G,Lanzamiento de la tienda,F,2,3,5,2500,4000,8000
