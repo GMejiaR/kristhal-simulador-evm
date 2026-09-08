@@ -1,8 +1,8 @@
-# 💎 Simulador de Riesgo y EVM — Joyería Kristhal
+# Simulador de Riesgo y EVM — Joyería Kristhal
 
-**Universidad Galileo · FISICC · IIO**
+**Universidad Galileo · IIO**
 Postgrado en Investigación de Operaciones · Evaluación y Control de Proyectos
-Prof. Gary Avendaño
+Ing. Gary Avendaño
 
 ---
 
@@ -10,11 +10,11 @@ Prof. Gary Avendaño
 
 Joyería Kristhal vende actualmente en local físico y redes sociales, sin tienda en línea. Este proyecto modela el lanzamiento de su sitio web con tienda integrada, con el objetivo de planificar, simular y evaluar el esfuerzo mediante:
 
-- ✅ Ruta Crítica (CPM/PERT) con diagrama de red interactivo
-- ✅ Simulación Monte Carlo (mínimo 1,000 simulaciones, 10,000 por defecto)
-- ✅ Gestión del Valor Ganado (EVM) con curva S
-- ✅ Dashboard ejecutivo con semáforo de decisión
-- ✅ Índice de criticidad por actividad *(opcional)*
+- Ruta Crítica (CPM/PERT) con diagrama de red interactivo
+- Simulación Monte Carlo (mínimo 1,000 simulaciones, 10,000 por defecto)
+- Gestión del Valor Ganado (EVM) con curva S
+- Dashboard ejecutivo con semáforo de decisión
+- Índice de criticidad por actividad *(opcional)*
 
 Aplicación desarrollada en **Python + Streamlit**.
 
@@ -32,7 +32,7 @@ Aplicación desarrollada en **Python + Streamlit**.
 git clone <URL_DEL_REPOSITORIO>
 cd kristhal-simulador-evm
 
-# 2. (Opcional) Crear un entorno virtual
+# 2. Crear un entorno virtual
 python -m venv .venv
 source .venv/bin/activate   # En Windows: .venv\Scripts\activate
 
@@ -49,7 +49,7 @@ La aplicación abrirá automáticamente en `http://localhost:8501`
 
 ## Despliegue en Streamlit Community Cloud
 
-1. Subir este repositorio a GitHub (público o compartido con el instructor).
+1. Subir este repositorio a GitHub.
 2. Entrar a [share.streamlit.io](https://share.streamlit.io) e iniciar sesión con GitHub.
 3. Crear una nueva app seleccionando el repositorio, la rama `main` y el archivo principal `app_kristhal.py`.
 4. Streamlit instalará automáticamente las dependencias de `requirements.txt` y publicará la app con una URL pública.
@@ -106,11 +106,11 @@ La aplicación carga el caso de estudio desde los archivos en `data/`. Si esa ca
 Datos del Proyecto → Ruta Crítica → Monte Carlo → EVM → Dashboard
 ```
 
-1. **📋 Definición del Proyecto** — Ver/editar actividades y estimaciones PERT
-2. **🔗 Ruta Crítica** — CPM con tabla de holguras y diagrama de red
-3. **🎲 Monte Carlo** — Histogramas, percentiles P50/P80 y probabilidades
-4. **📈 EVM y Pronósticos** — Indicadores, curva S e interpretación
-5. **🎯 Dashboard** — Panel ejecutivo con gauges y semáforo de decisión
+1. **Definición del Proyecto** — Ver/editar actividades y estimaciones PERT
+2. **Ruta Crítica** — CPM con tabla de holguras y diagrama de red
+3. **Monte Carlo** — Histogramas, percentiles P50/P80 y probabilidades
+4. **EVM y Pronósticos** — Indicadores, curva S e interpretación
+5. **Dashboard** — Panel ejecutivo con gauges y semáforo de decisión
 
 ---
 
@@ -138,10 +138,3 @@ Los valores fueron verificados contra la plantilla EVM del curso (`EVM_Proyecto.
 - Verificación de la duración total y de la ruta crítica (A-C-E-F-G, 50.5 días) contra el cálculo manual del informe.
 - Verificación de los indicadores EVM (SV, CV, SPI, CPI, EAC, ETC, VAC) contra la plantilla EVM del curso, con resultados coincidentes.
 - Ejecución de la app en modo headless para confirmar que carga sin errores con el caso de ejemplo por defecto.
-
----
-
-## Autoría
-
-Proyecto grupal — Universidad Galileo, Postgrado en Investigación de Operaciones.
-Módulo de EVM, visualización y repositorio desarrollado por Bryan (Gabriel Mejía Ruiz).
